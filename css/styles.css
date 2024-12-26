@@ -1,0 +1,98 @@
+/* รีเช็ตหน้าจอ */
+*{
+    margin: 0; /*ขอบ บน ล่าง ซ้าย ขวา*/
+    padding: 0; /* ระยะห่าง บน ล่าง ซ้าย ขวา*/
+    box-sizing: border-box; /*กำหนดให้เป็นกล่อง*/
+}
+
+/* css กล่องที่ 1 */
+nav {
+    display: flex; /* กำหนดให้กล่องเมนู เรียงต่อกัน */
+    justify-content: space-between; /* ดันกล่องให้ ชิดซ้าย-ขวา กระจายออก */
+    padding: 10px; /* border:1px solid red; */
+    background-color:#613613;
+}
+    
+/* กำหนดกล่อง logo เเละ link a */
+.logo a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+/* กำหนดกล่อง menu */
+.menu{
+    display: flex;
+    list-style: none;
+}
+
+/* กำหนดกล่อง menu ย่อย li */
+.menu li{
+    margin-left: 20px;
+}
+
+/* กำหนดกล่อง menu ย่อย li a */
+.menu li a{
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* กำหนด กล่องที่ 2 class banner */
+.banner{
+    background-color: #997950;
+    color: #ffffff;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner h1{
+    margin-top: 20px;
+    color: hwb(0 100% 0%);
+}
+
+.banner-info{
+    text-align: center;
+}
+
+/* เข้าถึงการปรับขนาดรูปภาพ */
+.banner-info img{
+    width: 300px;
+    border-radius:100% ;
+}
+
+.banner-info p{
+    /* background-color: bisque; */
+    color: hwb(0 100% 0%);
+    /* border-radius: 20px;
+    padding: 10px; */
+}
+/* กำหนด css กล่องที่ 3 */
+/* จัดการแสดงหน้าจอคอลัมน์ grid */
+.pic{
+    display: grid; /* แสดงผลแบบคอลัมน์ */
+    grid-template-columns: 1fr 1fr 1fr ; /* กำหนด3ตอลัมน์ */
+}
+.pic div{
+    padding: 20px; /* ระยะห่างระหว่างคอลัมน์ */
+
+}
+.pic div p{
+    margin-top: 10px; /* ระยะห่างจากขอบรูปภาพ */
+    padding: 1rem; /* ระยะเว้นวรรคจาก ข้อความ รูปภาพ */
+}
+.pic img{
+    width: 100%; /* กำหนดความกว้างรูปภาพ  */
+    border-radius: 100%; /* กำหนดขอบโค้งบน รูปภาพ */
+}
+/* กำหนด footer */
+footer{
+    background-color: #765D39;
+    color: azure;
+    padding: 20px;
+    text-align: center;
+}
